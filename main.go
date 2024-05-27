@@ -18,10 +18,6 @@ func main() {
 	flag.BoolVar(&showBoardFlag, "board", true, "Show board throughout game")
 	flag.BoolVar(&showMoveFlag, "moves", true, "Show valid moves each user turn")
 	flag.Parse()
-	flag.Usage = func() {
-		fmt.Fprintln(os.Stderr, "Flags:")
-		flag.PrintDefaults()
-	}
 
 	game := chess.NewGame()
 	userColor := rand.Int() % 2
