@@ -50,15 +50,9 @@ func main() {
 		turnCounter += 1
 	}
 
-	// // generate moves until game is over
-	// for game.Outcome() == chess.NoOutcome {
-	// 	// select a random move
-
-	// }
-
-	// // print outcome and game PGN
-	// fmt.Printf("Game completed. %s by %s.\n", game.Outcome(), game.Method())
-	// fmt.Println(game.String())
+	// print outcome and game PGN
+	fmt.Printf("Game completed. %s by %s.\n", game.Outcome(), game.Method())
+	fmt.Println(game.String())
 }
 
 func userMove(game *chess.Game) {
